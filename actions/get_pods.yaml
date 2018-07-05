@@ -1,0 +1,14 @@
+---
+name: get_pods
+runner_type: "python-script"
+description: List pods
+enabled: true
+entry_point: "get_pods.py"
+parameters:
+  namespace:
+    type: string
+    description: namespace
+    required: true
+  labels:
+    type: string
+    description: labels

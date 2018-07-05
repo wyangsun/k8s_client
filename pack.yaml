@@ -1,0 +1,7 @@
+---
+ref: k8s_client
+name: k8s_client
+description: kubernetes client
+version: 0.1.0
+author: yang.wang
+email: yang.wang@vungle.com
