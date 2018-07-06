@@ -9,6 +9,8 @@ parameters:
     type: string
     description: namespace
     required: true
+    default: "default"
   labels:
     type: string
-    description: labels
+    description: namespace
+    default: "default"
