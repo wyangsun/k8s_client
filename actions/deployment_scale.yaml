@@ -18,7 +18,7 @@ parameters:
     description: number of Deployment
   min:
     type: number
-    descripting: min number of Deployment
+    description: min number of Deployment
   max:
     type: number
     description: max number of Deployment
