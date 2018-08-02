@@ -1,0 +1,12 @@
+---
+name: get_deployment
+runner_type: "python-script"
+description: list or watch objects of kind Deployment
+enabled: true
+entry_point: "get_deployment.py"
+parameters:
+  namespace:
+    type: string
+    description: namespace
+    required: true
+    default: "default"
