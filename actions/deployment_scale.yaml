@@ -1,0 +1,24 @@
+---
+name: deployment_scale
+runner_type: "python-script"
+description: replace scale of the specified Deployment
+enabled: true
+entry_point: "deployment_scale.py"
+parameters:
+  namespace:
+    type: string
+    description: namespace
+    required: true
+    default: "default"
+  deploy_name:
+    type: string
+    description: name of Deployment
+  number:
+    type: number
+    description: number of Deployment
+  min:
+    type: number
+    descripting: min number of Deployment
+  max:
+    type: number
+    description: max number of Deployment
