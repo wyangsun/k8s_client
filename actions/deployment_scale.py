@@ -19,6 +19,5 @@ class deployment_scale(Action):
             body.spec.replicas = number
         else:
                 return (False, 'bad number')
-        #api_reponse = v1.patch_namespaced_deployment_scale(deploy_name, namespace, body, pretty=pretty)
-        return (True, body)
-        #return (True, api_reponse)
+        api_reponse = v1.patch_namespaced_deployment_scale(deploy_name, namespace, body)
+        return (True, api_reponse)
