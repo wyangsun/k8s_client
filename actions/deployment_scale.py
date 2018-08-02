@@ -13,7 +13,7 @@ class deployment_scale(Action):
 
         # Configs can be set in Configuration class directly or using helper utility
         config.load_kube_config()
-        v1 = client.CoreV1Api()
+        v1 = client.AppsV1Api()
         body = read_namespaced_deployment_scale(deploy_name, namespace, pretty=pretty)
         return (True, body)
         #if number > min && number < max:
