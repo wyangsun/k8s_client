@@ -14,11 +14,11 @@ parameters:
     type: string
     description: name of Deployment
   number:
-    type: number
+    type: integer
     description: number of Deployment
   min:
-    type: number
+    type: integer
     description: min number of Deployment
   max:
-    type: number
+    type: integer
     description: max number of Deployment
