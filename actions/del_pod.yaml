@@ -1,0 +1,15 @@
+---
+name: del_pod
+runner_type: "python-script"
+description: Delete the specified Pod
+enabled: true
+entry_point: "del_pod.py"
+parameters:
+  namespace:
+    type: string
+    description: namespace
+    required: true
+    default: "default"
+  pod_name:
+    type: string
+    description: name of the pod
